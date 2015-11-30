@@ -1,0 +1,12 @@
+root:
+  ~/Workspace/hackerrank
+
+commands:
+  server: bundle exec rails s
+  console: bundle exec rails c  
+  worker: echo "space for worker" 
+  bash: echo "Run your git/bundle/bower shit here"
+
+layout:
+  - [ server , console ]      
+  - [ worker , bash ] 
