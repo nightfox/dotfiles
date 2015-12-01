@@ -1,0 +1,30 @@
+[color]
+	ui = true
+[user]
+	name = Anirvan Mandal
+	email = anirvan@hackerrank.com
+[commit]
+  template = ~/.gitmessage
+[alias]
+	l = log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --decorate
+	g = log --oneline --decorate --graph
+	s = status -sb
+	co = checkout
+	b = branch -avv
+	ll = log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --decorate --numstat
+	lds = log --pretty=format:\"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --decorate --date=short
+	ld = log --pretty=format:\"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --decorate --date=relative
+	filelog = log -u
+	fl = log -u
+	dl = ll -1
+	cp = cherry-pick
+	st = status -s
+	cl = clone
+	ci = commit
+	br = branch
+	pur = pull --rebase
+	branchdiff = log --graph --left-right --cherry-pick --oneline
+	sps = config --global alias.branchdiff 'log --graph --left-right --cherry-pick --oneline' stash -u &&  pull --rebase && stash apply
+	ada = add --all :/
+[rerere]
+	enabled = true
